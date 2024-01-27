@@ -1,0 +1,22 @@
+/* components/EditableTextbox/EditableTextbox.module.css */
+.textbox {
+    margin-bottom: 20px;
+  }
+  
+  .textbox textarea {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .textbox button {
+    padding: 10px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .textbox button:hover {
+    background-color: #bd2130;
+  }
+  

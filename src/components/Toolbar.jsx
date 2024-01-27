@@ -1,11 +1,13 @@
 // components/Toolbar.js
 
 "use client"
+
 import React from 'react';
+import styles from '../styles/Toolbar.module.css';
 
 const Toolbar = () => {
   return (
-    <div style={{background: "red"}}>
+    <div className={styles.toolbar}>
       <button draggable="true" onDragStart={(e) => e.dataTransfer.setData('text/plain', 'Text')}>
         Text
       </button>

@@ -1,0 +1,23 @@
+/* components/Toolbar/Toolbar.module.css */
+.toolbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+    height: 100%; /* Set height to 100% */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .toolbar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .toolbar button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,30 @@
+/* components/WebsiteCanvas/WebsiteCanvas.module.css */
+.canvas {
+    flex: 1;
+    padding: 20px;
+    background-color: #e6e6e6;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    height: 100%; /* Set height to 100% */
+  }
+  
+  .canvas textarea,
+  .canvas input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .canvas button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .canvas button:hover {
+    background-color: #0056b3;
+  }
+  

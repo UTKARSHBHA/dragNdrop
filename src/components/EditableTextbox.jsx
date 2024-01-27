@@ -1,15 +1,19 @@
 // components/EditableTextbox.js
-import React, { useState } from 'react';
+
+"use client";
+
+import React, { useState } from "react";
+import styles from "../styles/EditableTextbox.module.css";
 
 const EditableTextbox = ({ onDelete }) => {
-  const [text, setText] = useState('Your Text Here');
+  const [text, setText] = useState("Your Text Here");
 
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
 
   return (
-    <div>
+    <div className={styles.textbox}>
       <textarea value={text} onChange={handleTextChange} />
       <button onClick={onDelete}>Delete</button>
     </div>
