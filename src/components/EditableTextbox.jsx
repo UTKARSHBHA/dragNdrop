@@ -1,3 +1,5 @@
+"use client"
+
 // components/EditableTextbox/EditableTextbox.js
 import React, { useState, useEffect, useRef } from 'react';
 import Draggable from 'react-draggable';

@@ -1,3 +1,5 @@
+"use client"
+
 // components/EditableImage/EditableImage.js
 import React, { useState, useEffect, useRef } from 'react';
 import Draggable from 'react-draggable';
