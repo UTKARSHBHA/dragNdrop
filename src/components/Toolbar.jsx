@@ -8,12 +8,12 @@ import styles from '../styles/Toolbar.module.css';
 const Toolbar = () => {
   return (
     <div className={styles.toolbar}>
-      <button draggable="true" onDragStart={(e) => e.dataTransfer.setData('text/plain', 'Text')}>
+      <div draggable="true" onDragStart={(e) => e.dataTransfer.setData('text/plain', 'Text')}>
         Text
-      </button>
-      <button draggable="true" onDragStart={(e) => e.dataTransfer.setData('text/plain', 'Image')}>
+      </div>
+      <div draggable="true" onDragStart={(e) => e.dataTransfer.setData('text/plain', 'Image')}>
         Image
-      </button>
+      </div>
     </div>
   );
 };

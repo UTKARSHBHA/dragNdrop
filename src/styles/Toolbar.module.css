@@ -8,16 +8,17 @@
     flex-direction: column;
   }
   
-  .toolbar button {
+  .toolbar div {
     width: 100%;
     padding: 10px;
+    margin: 20px 0;
     background-color: #007bff;
     color: #ffffff;
     border: none;
     cursor: pointer;
   }
   
-  .toolbar button:hover {
+  .toolbar div:hover {
     background-color: #0056b3;
   }
   
