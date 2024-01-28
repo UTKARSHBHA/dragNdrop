@@ -1,6 +1,5 @@
 "use client"
 
-// components/EditableImage/EditableImage.js
 import React, { useState, useEffect, useRef } from 'react';
 import Draggable from 'react-draggable';
 import styles from '../styles/EditableImage.module.css';
@@ -34,17 +33,14 @@ const EditableImage = ({ id, onDelete }) => {
   };
 
   const handleDocumentClick = (e) => {
-    // Check if the click occurred outside the editable area
     if (draggableRef.current && !draggableRef.current.contains(e.target)) {
       handleEditComplete();
     }
   };
 
   useEffect(() => {
-    // Attach the click event listener to the document
     document.addEventListener('click', handleDocumentClick);
 
-    // Cleanup the event listener on component unmount
     return () => {
       document.removeEventListener('click', handleDocumentClick);
     };

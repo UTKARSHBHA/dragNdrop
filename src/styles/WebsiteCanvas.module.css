@@ -1,21 +1,20 @@
-/* components/WebsiteCanvas/WebsiteCanvas.module.css */
+
 .canvas {
   flex: 1;
   padding: 20px;
   background-color: #e6e6e6;
-  overflow: auto; /* Allow scrolling */
-  position: relative; /* Enable absolute positioning within the canvas */
+  overflow: auto;
+  position: relative;
 }
 
 .section {
-  position: absolute; /* Position elements absolutely within the canvas */
+  position: absolute;
 }
 
-/* Additional styling for sections (adjust as needed) */
 .section h2,
 .section img {
-  margin: 0; /* Remove default margins */
-  cursor: move; /* Add move cursor for draggable effect */
+  margin: 0;
+  cursor: move;
 }
 
 .canvas textarea,

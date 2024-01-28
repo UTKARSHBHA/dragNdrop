@@ -1,6 +1,5 @@
 "use client"
 
-// components/WebsiteCanvas/WebsiteCanvas.js
 import React, { useState } from 'react';
 import EditableTextbox from '../components/EditableTextbox';
 import EditableImage from '../components/EditableImage';
