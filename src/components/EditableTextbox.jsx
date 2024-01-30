@@ -9,12 +9,6 @@ const EditableTextbox = ({ id, onDelete }) => {
   const [isEditing, setIsEditing] = useState(false);
   const draggableRef = useRef(null);
 
-  useEffect(() => {
-    const storedText = localStorage.getItem(`text-${id}`);
-    if (storedText) {
-      setText(storedText);
-    }
-  }, [id]);
 
   const handleTextChange = (e) => {
     setText(e.target.value);

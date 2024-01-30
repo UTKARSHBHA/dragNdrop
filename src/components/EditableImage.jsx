@@ -9,12 +9,7 @@ const EditableImage = ({ id, onDelete }) => {
   const [isEditing, setIsEditing] = useState(false);
   const draggableRef = useRef(null);
 
-  useEffect(() => {
-    const storedImageUrl = localStorage.getItem(`image-${id}`);
-    if (storedImageUrl) {
-      setImageUrl(storedImageUrl);
-    }
-  }, [id]);
+
 
   const handleImageChange = (e) => {
     setImageUrl(e.target.value);
